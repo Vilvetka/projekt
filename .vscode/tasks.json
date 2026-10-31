@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build main.c",
+            "type": "process",
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-O0",
+                "-Wall",
+                "-Wextra",
+                "${workspaceFolder}\\main.c",
+                "-o",
+                "${workspaceFolder}\\main-debug.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
